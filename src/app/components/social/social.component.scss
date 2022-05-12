@@ -1,0 +1,19 @@
+
+.header  {
+    display: flex;
+    h4 {
+        font-size: 30px;
+        font-weight: 400;
+    }
+    img {
+        margin-left: 21px;
+    }
+}
+.media {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    img {
+        width: 20%
+    }
+}
