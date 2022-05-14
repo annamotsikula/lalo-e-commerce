@@ -1,0 +1,28 @@
+.ads {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 45px 0;
+    .info {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 12px;
+        width: 50%;
+        h2 {
+            font-size: 48px;
+            font-weight: 400;
+        }
+    }
+   .bg-image {
+       background-image: url('../../../assets/media/banner/Rectangle\ 27.png');
+       background-repeat: no-repeat;
+       background-position: center;
+       background-size: cover;
+       width: 50%;
+       height: 400px;
+   }
+    
+}

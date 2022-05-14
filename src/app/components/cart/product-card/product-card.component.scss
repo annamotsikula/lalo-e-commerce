@@ -1,0 +1,21 @@
+.card {
+    height: 400px;
+    width: 250px;
+    .product-img {
+        width: 100%;
+        display: block;
+
+    }
+}
+.card-info {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8px;
+   
+}
+.price {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 275;
+}
