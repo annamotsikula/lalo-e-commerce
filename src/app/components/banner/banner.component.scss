@@ -1,0 +1,24 @@
+.banner {
+    background-image: url('../../../assets/media/banner/Rectangle\ 9.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 416px;
+    .offer {
+        width: fit-content;
+        float: right;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin: 7% 10% 0 0;
+        gap: 12px;
+    }
+    .offer-header {
+        font-size: 58px;
+        
+        color: #fff;
+        font-weight: 400;
+        text-transform: uppercase;
+    }
+    
+}

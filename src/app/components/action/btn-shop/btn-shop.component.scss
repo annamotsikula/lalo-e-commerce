@@ -1,0 +1,30 @@
+.btn-shop {
+    padding: 11px 44px;
+    background: #000;
+    color: #fff;
+    width: 100%;
+    border: 1px solid #000000;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.1em;
+    cursor: pointer;
+}
+.btn-transparent {
+    background: none;
+    color: #000000;
+}
+.btn-bw {
+    background: #000;
+    color: #fff
+}
+.btn-underline {
+    border: none;
+    color: #000000;
+    background: none;
+    padding: 0;
+    text-decoration: underline;
+}

@@ -1,0 +1,23 @@
+.social {
+    padding-bottom: 1.5%;
+    border-top: 1px solid #C4C4C4;;
+}
+.header  {
+    display: flex;
+    padding: 20px 0;
+    h4 {
+        font-size: 30px;
+        font-weight: 400;
+    }
+    img {
+        margin-left: 21px;
+    }
+}
+.media {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    img {
+        width: 20%
+    }
+}

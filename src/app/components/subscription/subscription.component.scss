@@ -1,0 +1,39 @@
+.subscription {
+    background-color: #E1E1E1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    height: 176px;
+    
+}
+.user-subscribe {
+    margin-right: 90px;
+    p {
+        font-size: 12px;
+    }
+}
+.extra-info {
+    margin-left: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 60px;
+    
+}
+.signup {
+    border: 1px solid #000000;
+    padding: 12px 14px;
+    input[type=text] {
+        outline: none;
+        background: none;
+        border: none;
+    }
+}
+.social {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    margin-top: 26px
+}
