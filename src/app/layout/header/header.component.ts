@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
   svgNames: string[] = [ ]
+  isSearchOpened: boolean = false
   constructor() { }
 
   ngOnInit(): void {

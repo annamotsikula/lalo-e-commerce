@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class NavigationComponent implements OnInit {
 
   navList: string[] = [ 'Clothing','Shoes','Bag','Accessories','In Stock','Gallery', 'Press','About us' ]
-  innerList: string[] = ['All', 'Dresses', 'Sweaters','Jakets', 'Vests', 'Playsuit', 'Coats', 'Shorts', 'Skirts', 'Tops', 'Cardigans', 'Pants']
+  innerList: string[] = ['All', 'Coats', 'Dresses','Shorts', 'Sweaters', 'Skirts', 'Jackets', 'Tops', 'Vests', 'Cardigans', 'Playsuit', 'Pants']
 
   constructor() { }
 
