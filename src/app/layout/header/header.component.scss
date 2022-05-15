@@ -17,5 +17,23 @@
     &:nth-child(1) {
         margin-left: 0
     }
+    cursor: pointer;
 
+}
+.search-panel {
+    display: flex;
+    justify-content: space-between;
+    .icon-input {
+        align-self: middle;
+    }
+}
+input[type=text] {
+    border: none;
+    background: none;
+    height: 100%;
+    font-size: 16px;
+    margin-left: 8px;
+    &:focus-visible {
+        border: none
+    }
 }
