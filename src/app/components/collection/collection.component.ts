@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { IDynamicCollection } from '../core/interfaces/collection.interface';
 
 @Component({
   selector: 'app-collection',
@@ -6,6 +7,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./collection.component.scss']
 })
 export class CollectionComponent implements OnInit {
+  @Input() collection_data : IDynamicCollection = {
+    headerText: '',
+    subText: '',
+    buttonText: ''
+  }
 
   constructor() { }
 

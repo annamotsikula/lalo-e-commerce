@@ -1,1 +1,22 @@
-<p>products works!</p>
+<div class="category-product">
+    <h2>Clothing</h2>
+    <div class="line"></div>
+    <div class="container row">
+        <div class="filter-container">
+            <div class="expand" *ngFor="let filter of filterData">
+                <section class="group" >
+                    <div class="filter-option">
+                        <span name="title" class="title">{{filter.title}}</span>
+                        <label>All</label>
+                    </div>
+                    <div class="">
+                        <img src="assets/media/action-icons/arrow-down.svg" alt="">
+                    </div>
+                </section>
+                <ul class="filter-values">
+                    <li *ngFor="let item of filter.items">{{item}}</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

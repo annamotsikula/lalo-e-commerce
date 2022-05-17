@@ -16,14 +16,15 @@ export class BtnShopComponent implements OnInit {
   }
   getBtnStyle(): string {
     switch(this.bStyle) {
-			case 'transparent': 
+			case 'outline': 
 				return 'btn-transparent'
-			case 'bw':
+			case 'fill':
 				return 'btn-bw'
       case 'underline':
 				return 'btn-underline'
+        default: 
+        return 'btn-bw'
 		}
-    return ''
   }
   clickEvent() {
     this.onClick.emit()
