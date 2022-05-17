@@ -1,9 +1,9 @@
 <div class="container" style="margin-top: 1rem; margin-bottom: 1rem">
     <div class="content">
         <div class="card">
-            <label for="" class="collection-header">New in</label>
-            <span>Discover th latest launches onsite</span>
-            <btn-shop style="margin-top: 5px"></btn-shop>
+            <label for="" class="collection-header">{{collection_data.headerText}}</label>
+            <span>{{collection_data.subText}}</span>
+            <btn-shop style="margin-top: 5px" [bHead]="collection_data.buttonText"></btn-shop>
         </div>
         <product-card *ngFor="let i of [1,2,3,4]"></product-card>
     </div>
