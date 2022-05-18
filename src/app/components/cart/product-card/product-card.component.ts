@@ -1,4 +1,5 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'product-card',
@@ -6,15 +7,20 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./product-card.component.scss']
 })
 export class ProductCardComponent implements OnInit {
-  price: number = 0
-  @Input() title: string = ''
+  price: number = 900
+  @Input() title: string = 'Cardigan N1'
+  @Input() id: number = 0
   @Input() src: string = ''
-  @Input() obj = {
-    
-  }
-  constructor() { }
+  @Input() productData: any[] = []
+  @Output() getValueFromClick = new EventEmitter<any>()
+  constructor(private _router: Router) { }
 
   ngOnInit(): void {
   }
-
+  sendValues() {
+    this.getValueFromClick.emit(this.id)
+  }
+  redirectToDetails() {
+    // this._router.navigate(['/products', id : this.id])
+  }
 }

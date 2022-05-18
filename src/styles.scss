@@ -14,6 +14,10 @@ h1,h2,h3,h4,h5,h6 {
     width: 1320px;
     margin: auto
 }
+.row {
+    display: flex;
+    flex-direction: row;
+}
 button {
     cursor: pointer;
     display: inline-block;

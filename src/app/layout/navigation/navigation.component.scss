@@ -40,13 +40,13 @@
     background-color: #FFFFFF;
     color: #000;
     padding: 2rem 0;
-    // display: none;
+    display: none;
 }
-// .list-item:hover ~ .inner-nav {
+.list-item a:hover ~ .inner-nav {
     
-//         display: block;
+        display: block;
     
-// }
+}
 .inner-link {
     display: flex;
     flex-wrap: wrap;
