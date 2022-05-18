@@ -9,6 +9,7 @@ interface IFilter {
   styleUrls: ['./products.component.scss']
 })
 export class ProductsComponent implements OnInit {
+  hasCategory: boolean = false
 
   filterData: IFilter[] = [
     {
@@ -22,11 +23,26 @@ export class ProductsComponent implements OnInit {
       items: ['All']
     }
   ]
-  
+  products = Array.from({length:8},()=> ({'hello':'goodbye'}))
 
-  constructor() { }
+  constructor() {
+    
+      // (item, index)=> {
+      //  item.title = `Cardigan N${index+2}`
+      //  item.price = '900 USD'
+    //  }
+    //  )
+  }
 
   ngOnInit(): void {
+
+    console.log(this.products)
+  
+  }
+
+  
+  showCategoryByID(index: number) {
+   
   }
 
 }

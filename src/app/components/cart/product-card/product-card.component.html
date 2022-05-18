@@ -1,7 +1,8 @@
 <div class="card">
-    <img src="../../../../assets/media/product/card-template.png" alt="" class="product-img">
+    <img src="../../../../assets/media/product/card-template.png" alt="" class="product-img"  routerLink="/products/{{id}}">
     <div class="card-info">
-        <span>Cardigan N1</span>
-        <span class="price">900 USD</span>
+        <span>{{title}}</span>
+        <!-- <span class="price">{{price | currency:'USD':'code':'1.0-0'}}</span> -->
+        <span class="price">{{price}}</span>
     </div>
 </div>

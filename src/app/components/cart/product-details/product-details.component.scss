@@ -1,0 +1,23 @@
+.route-path {
+    font-size: 10px;
+    margin: .5rem 2rem;
+}
+
+.product {
+    height: 500px;
+    justify-content: space-between;
+}
+.small {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    img{
+        width: 70px;
+        height: 110px;
+        border: 1px solid #000000;
+
+    }
+}
+.large {
+    margin-left: 1rem
+}
