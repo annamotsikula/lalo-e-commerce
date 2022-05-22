@@ -12,6 +12,9 @@ export class CollectionComponent implements OnInit {
     subText: '',
     buttonText: ''
   }
+  product = {
+    
+  }
 
   constructor() { }
 

@@ -15,6 +15,11 @@ import { CollectionComponent } from '../components/collection/collection.compone
 import { ProductCardComponent } from '../components/cart/product-card/product-card.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { ProductsComponent } from '../components/cart/products/products.component';
+import { BtnCartComponent } from '../components/action/btn-cart/btn-cart.component';
+import { ProductDetailsComponent } from '../components/cart/product-details/product-details.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { AboutComponent } from '../components/about/about.component';
+import { PressComponent } from '../components/press/press.component';
 
 
 
@@ -32,18 +37,23 @@ import { ProductsComponent } from '../components/cart/products/products.componen
       AdsComponent,
       CollectionComponent,
       ProductCardComponent,
-      ProductsComponent
+      ProductDetailsComponent,
+      ProductsComponent,
+      BtnCartComponent,
+      AboutComponent,
+      PressComponent
      
       
   ],
   imports: [
     CommonModule,
-    MainRoutingModule
+    MainRoutingModule,
+    ReactiveFormsModule
   ],
   exports: [
     AdsComponent,
     CollectionComponent,
-    BannerComponent,
+    BannerComponent
   ]
 })
 export class MainModule { }

@@ -1,6 +1,6 @@
 <div class="header" [ngSwitch]="isSearchOpened">
     <ng-container *ngSwitchCase="false">
-        <h1 class="logo">
+        <h1 class="logo" routerLink="/home">
             <img src="assets/media/logo.svg" alt="LALO-LOGO">
         </h1>
         <app-navigation></app-navigation>
@@ -28,7 +28,7 @@
             <input type="text" name="" id="" placeholder="Search">
         </div>
         <button>
-            <img src="assets/media/btn-close.svg" alt="Close" (click)="isSearchOpened=false">
+            <img src="assets/media/action-icons/btn-close.svg" alt="Close" (click)="isSearchOpened=false">
         </button>
             
         

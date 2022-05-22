@@ -1,10 +1,22 @@
 <ul class="nav-list">
     <li *ngFor="let list of navList" class="list-item" >
-        <a routerLink="/products">{{list}}</a>
+        <a routerLink="{{list.src}}">{{list.title}}</a>
     </li>
 </ul>
-<div class="inner-nav">
+<!-- <div class="inner-nav">
     <div class="inner-link">
         <span *ngFor="let list of innerList" class="col" >{{list}}</span>
     </div>
-</div>
+</div> -->
+
+
+<!-- <div class="nav-list">          
+    <a *ngFor="let mi of navList;let i = index" class="list-item">
+          <span class="dropdown-menu-item">{{ mi }}</span>
+        <div class="inner-nav">
+          <span *ngFor="let sub of innerList;let j = index" class="submenu-item"
+            (click)="onClick($event, i, j)"> {{ sub }}</span> 
+        </div>
+    </a>
+
+</div> -->

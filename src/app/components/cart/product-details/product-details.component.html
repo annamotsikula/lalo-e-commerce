@@ -5,20 +5,46 @@
     <div class="product row">
         <div class="image-preview row">
             <div class="small">
-                <img src="assets/media/product/product-detail.png" alt="" >
-                <img src="assets/media/product/card-template.png" alt="" >
+                <img *ngFor="let img of imgPreview" src="{{img.src}}" alt="" id="{{img.id}}" (click)="setImgPreview(img)">
             </div>
             <div class="large">
-                <img src="assets/media/product/product-detail.png" alt="" style="width:442px; height:521px">
+                <img src="{{chosenImg}}" alt="" style="width: 100%; height: 100%;">
             </div>
         </div>
         <div class="details">
-            <h3>Peony sweater</h3>
-            <span>900 USD</span>
-            <form action="">
-                <label for="color">color</label>
-                <div class="colors"></div>
+            <div class="title">
+                <h3>Peony sweater</h3>
+                <span class="price">900 USD</span>
+            </div>
+            <form action="" class="select-property" [formGroup]="myForm">
+                <section>
+                    <label for="color-prop">Color</label>
+                    <ul id="color-prop">
+                        <li *ngFor="let color of productDetail.color" class="color-item">
+                            <label for="">
+                                <input type="radio" value="{{color.code}}" [checked]="color.checked" formControlName="name">
+                                <span [style.background-color]="color.code" [style.box-shadow]='getBoxShadow(color.code)' class="ellipse"></span>
+                            </label>
+                        </li>
+                    </ul>
+                </section>
+                <section>
+                    <label for="size">Size</label>
+                    <ul id="size-prop">
+                        <li *ngFor="let size of productDetail.size" class="size">
+                            <label for="size-prop">
+                                <input type="radio" value="{{size}}" formControlName="email">
+                                <span class="size-text">{{size}}</span>
+                            </label>
+                        </li>
+                    </ul>
+                </section>
+                <section>
+                    <btn-cart></btn-cart>
+                </section>
             </form>
         </div>
     </div>
 </div>
+
+<!-- <app-collection></app-collection> -->

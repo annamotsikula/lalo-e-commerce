@@ -19,7 +19,7 @@
             </div> 
         </div>
         <div class="products">
-            <product-card *ngFor="let item of products; let i=index" [id]="i" ></product-card>
+            <product-card *ngFor="let item of productCard; let i=index" [id]="i" [cardDetail]="item"></product-card>
         </div>
     </div>
 </div>
