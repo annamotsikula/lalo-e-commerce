@@ -23,6 +23,10 @@ ul {
     display: flex;
     flex-direction: row;
 }
+.column {
+    display: flex;
+    flex-direction: column;
+}
 .price {
     font-family: 'Poppins', sans-serif;
     font-size: 14px;

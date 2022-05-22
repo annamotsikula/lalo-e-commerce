@@ -5,6 +5,6 @@
             <span>{{collection_data.subText}}</span>
             <btn-shop style="margin-top: 5px" [bHead]="collection_data.buttonText"></btn-shop>
         </div>
-        <product-card *ngFor="let i of [1,2,3,4]"></product-card>
+        <product-card *ngFor="let i of collection_list" [cardDetail]="i"></product-card>
     </div>
 </div>

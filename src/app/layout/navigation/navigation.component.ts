@@ -43,11 +43,11 @@ export class NavigationComponent implements OnInit {
     },
     {
       title: 'Gallery',
-      src: '/'
+      src: '/gallery'
     },
     {
       title: 'Press',
-      src: '/'
+      src: '/press'
     },
     {
       title: 'About us',

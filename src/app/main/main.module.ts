@@ -13,13 +13,15 @@ import { BtnShopComponent } from '../components/action/btn-shop/btn-shop.compone
 import { AdsComponent } from '../components/ads/ads.component';
 import { CollectionComponent } from '../components/collection/collection.component';
 import { ProductCardComponent } from '../components/cart/product-card/product-card.component';
-import { BrowserModule } from '@angular/platform-browser';
 import { ProductsComponent } from '../components/cart/products/products.component';
 import { BtnCartComponent } from '../components/action/btn-cart/btn-cart.component';
 import { ProductDetailsComponent } from '../components/cart/product-details/product-details.component';
 import { ReactiveFormsModule } from '@angular/forms';
-import { AboutComponent } from '../components/about/about.component';
-import { PressComponent } from '../components/press/press.component';
+import { AboutComponent } from '../components/custom-layout/about/about.component';
+import { PressComponent } from '../components/custom-layout/press/press.component';
+import { GalleryComponent } from '../components/custom-layout/gallery/gallery.component';
+import { PressDetailComponent } from '../components/custom-layout/press-detail/press-detail.component';
+import { AuthModule } from '../auth/auth.module';
 
 
 
@@ -41,14 +43,17 @@ import { PressComponent } from '../components/press/press.component';
       ProductsComponent,
       BtnCartComponent,
       AboutComponent,
-      PressComponent
+      PressComponent,
+      GalleryComponent,
+      PressDetailComponent
      
       
   ],
   imports: [
     CommonModule,
     MainRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    AuthModule
   ],
   exports: [
     AdsComponent,
