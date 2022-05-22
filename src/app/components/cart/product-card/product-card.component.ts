@@ -1,6 +1,9 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { Router } from '@angular/router';
-
+interface ICard {
+  title: string,
+  price? : number | null
+}
 @Component({
   selector: 'product-card',
   templateUrl: './product-card.component.html',
@@ -11,10 +14,11 @@ export class ProductCardComponent implements OnInit {
   @Input() title: string = 'Cardigan N1'
   @Input() id: number = 0
   @Input() src: string = ''
-  @Input() productData: any[] = []
   @Output() getValueFromClick = new EventEmitter<any>()
+  @Input() cardDetail: ICard = {
+    title: ''
+  }
   constructor(private _router: Router) { }
-
   ngOnInit(): void {
   }
   sendValues() {

@@ -3,6 +3,10 @@ interface IFilter {
   title: string,
   items: string[]
 }
+interface ICard {
+  price?: number,
+  title: string
+}
 @Component({
   selector: 'app-products',
   templateUrl: './products.component.html',
@@ -23,6 +27,40 @@ export class ProductsComponent implements OnInit {
       items: ['All']
     }
   ]
+  productCard: ICard[] = [
+    {
+      title: 'Cardigan N1',
+      price: 900
+    },
+    {
+      title: 'Cardigan N2',
+      price: 900
+    },
+    {
+      title: 'Cardigan N3',
+      price: 900
+    },
+    {
+      title: 'Cardigan N4',
+      price: 900
+    },
+    {
+      title: 'Cardigan N5',
+      price: 900
+    },
+    {
+      title: 'Cardigan N6',
+      price: 900
+    },
+    {
+      title: 'Cardigan N7',
+      price: 900
+    },
+    {
+      title: 'Cardigan N8',
+      price: 900
+    },
+]
   products = Array.from({length:8},()=> ({'hello':'goodbye'}))
 
   constructor() {

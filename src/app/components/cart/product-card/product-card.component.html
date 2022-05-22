@@ -1,8 +1,7 @@
 <div class="card">
     <img src="../../../../assets/media/product/card-template.png" alt="" class="product-img"  routerLink="/products/{{id}}">
-    <div class="card-info">
-        <span>{{title}}</span>
-        <!-- <span class="price">{{price | currency:'USD':'code':'1.0-0'}}</span> -->
-        <span class="price">{{price}}</span>
+    <div class="card-info" [ngStyle]="{'justify-content' : cardDetail.price ? 'space-between': 'center'}">
+        <span>{{cardDetail.title}}</span>
+        <span class="price" *ngIf="cardDetail.price">{{cardDetail.price}}</span>
     </div>
 </div>
