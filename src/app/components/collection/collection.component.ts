@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { IDynamicCollection } from '../core/interfaces/collection.interface';
+import { ICard } from '../core/interfaces/product.interface';
 
 @Component({
   selector: 'app-collection',
@@ -12,10 +13,7 @@ export class CollectionComponent implements OnInit {
     subText: '',
     buttonText: ''
   }
-  product = {
-    
-  }
-
+  @Input() collection_list: ICard[] = [] 
   constructor() { }
 
   ngOnInit(): void {

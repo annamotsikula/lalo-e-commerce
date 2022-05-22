@@ -1,12 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-interface IFilter {
-  title: string,
-  items: string[]
-}
-interface ICard {
-  price?: number,
-  title: string
-}
+import { ICard, IFilter } from '../../core/interfaces/product.interface';
+
+
 @Component({
   selector: 'app-products',
   templateUrl: './products.component.html',

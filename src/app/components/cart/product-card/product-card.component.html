@@ -1,5 +1,8 @@
 <div class="card">
-    <img src="../../../../assets/media/product/card-template.png" alt="" class="product-img"  routerLink="/products/{{id}}">
+    <ng-container [ngSwitch]="!!cardDetail.src">
+        <img *ngSwitchCase="false" src="../../../../assets/media/product/card-template.png" alt="" class="product-img"  routerLink="/products/{{id}}">
+        <img *ngSwitchCase="true" src="{{cardDetail.src}}" alt="" class="product-img"  routerLink="/press/{{id}}">
+    </ng-container>
     <div class="card-info" [ngStyle]="{'justify-content' : cardDetail.price ? 'space-between': 'center'}">
         <span>{{cardDetail.title}}</span>
         <span class="price" *ngIf="cardDetail.price">{{cardDetail.price}}</span>

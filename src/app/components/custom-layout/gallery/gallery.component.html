@@ -1,0 +1,12 @@
+<div class="container">
+    <div class="cover row">
+        <img src="/assets/media/gallery/g-1.png" alt="">
+        <div class="column">
+            <span class="header">Spring Collection</span>
+            <span>Shop and explore 2022 spring collection</span>
+        </div>
+    </div>
+    <div class="gallery row">
+        <product-card *ngFor="let card of galleryList; let i = index" [id]="i" [cardDetail]="card"></product-card>
+    </div>
+</div>
