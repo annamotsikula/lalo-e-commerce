@@ -58,7 +58,8 @@ import { AuthModule } from '../auth/auth.module';
   exports: [
     AdsComponent,
     CollectionComponent,
-    BannerComponent
+    BannerComponent,
+    ReactiveFormsModule
   ]
 })
 export class MainModule { }

@@ -22,6 +22,7 @@ const routes: Routes = [
           { path: 'gallery', component: GalleryComponent},
           { path: 'press', component: PressComponent},
           { path: 'press/:id', component: PressDetailComponent},
+          { path: 'auth', loadChildren: () => import('../auth/auth.module').then(m=>m.AuthModule)}
 
           
 
@@ -29,7 +30,7 @@ const routes: Routes = [
 
         ]
        
-    }
+    },
 ];
 
 @NgModule({
